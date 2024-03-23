@@ -1,7 +1,7 @@
 import React from 'react';
 import SportCard from './SportCard/SportCard';
 import SportsAdCard from './SportsAd/SportsAdCard'
-import SectionBtn from '../../Shared/Navbar/Buttons/SectionBtn';
+import SectionBtn from '../../Shared/Buttons/SectionBtn';
 
 const Sports = () => {
 
