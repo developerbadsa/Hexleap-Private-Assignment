@@ -6,6 +6,7 @@ const SportCard = () => {
       <div className='bg-white p-2 shadow-lg'>
          <Image
             alt=''
+            className='w-full'
             src={
                'https://i.ibb.co/MRRx7tW/277307281-10158751675643224-148609460173032344-n.png'
             }

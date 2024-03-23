@@ -9,6 +9,7 @@ const SportsAdCard = () => {
         <span className='absolute bg-black right-0 px-4 text-white'>Ad</span>
         <Image
           alt=''
+          className='w-full'
           src={
             'https://i.ibb.co/CVBWFYM/unnamed-1-1.png'
           }
