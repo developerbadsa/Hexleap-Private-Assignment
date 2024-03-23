@@ -5,7 +5,8 @@ const SportsAdCard = () => {
   return (
     <div className='bg-white p-2 shadow-lg'>
       {/* image section */}
-      <div>
+      <div className='relative'>
+        <span className='absolute bg-black right-0 px-4 text-white'>Ad</span>
         <Image
           alt=''
           src={
