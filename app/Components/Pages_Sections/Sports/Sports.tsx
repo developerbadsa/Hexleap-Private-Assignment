@@ -1,6 +1,7 @@
 import React from 'react';
 import SportCard from './SportCard/SportCard';
 import SportsAdCard from './SportsAd/SportsAdCard'
+import SectionBtn from '../../Shared/Navbar/Buttons/SectionBtn';
 
 const Sports = () => {
 
@@ -17,6 +18,9 @@ const Sports = () => {
              sportCardDatas.map((inx, cardData)=><SportCard key={inx}></SportCard>)
           }
           <SportsAdCard></SportsAdCard>
+         </div>
+         <div className='text-center mt-10'>
+         <SectionBtn btnText={'See More'}></SectionBtn>
          </div>
       </section>
    );
