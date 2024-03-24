@@ -5,7 +5,7 @@ const CollectionSportlightCard = ({cardData}) => {
    const {title, date, location, image} = cardData;
 
    return (
-      <div className='bg-[#fff] border py-2 shadow-lg h-[430px] md:h-[630px] relative'>
+      <div className='bg-[#fff] dark:bg-[#3B3E47] border py-2 shadow-lg h-[430px] md:h-[630px] relative'>
          <div className=' '>
             <Image
                alt=''

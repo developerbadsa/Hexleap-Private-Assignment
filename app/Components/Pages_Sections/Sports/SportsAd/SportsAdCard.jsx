@@ -3,7 +3,7 @@ import React from 'react';
 
 const SportsAdCard = () => {
   return (
-    <div className='bg-white p-2 shadow-lg'>
+    <div className='bg-white dark:bg-[#3B3E47] p-2 shadow-lg'>
       {/* image section */}
       <div className='relative'>
         <span className='absolute bg-black right-0 px-4 text-white'>Ad</span>
@@ -17,11 +17,11 @@ const SportsAdCard = () => {
           height={385}></Image>
       </div>
       {/* Text Section */}
-      <div className=' px-3'>
-        <h4 className='mt-4 text-lg text-black font-medium text-center'>
+      <div className='px-3'>
+        <h4 className='mt-4 text-lg text-black dark:text-white font-medium text-center'>
           Advertisement title
         </h4>
-        <span className='text-xs text-[#525965] leading-6'>
+        <span className='text-xs text-[#525965] dark:text-[#DFDFDF] leading-6'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </span>
       </div>
