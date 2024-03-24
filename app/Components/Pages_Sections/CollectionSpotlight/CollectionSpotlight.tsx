@@ -4,8 +4,6 @@ import CollectionSportlightCard from './CollectionSportlightCard/CollectionSport
 import SportLightSlider from './SportLightSlider/SportLightSlider';
 // import SportLightSlider from './SportLightSlider/SportLightSlider'
 
-
-
 const CollectionSpotlight = () => {
    return (
       <section className='mt-8 py-12  flex flex-col justify-between'>
@@ -20,10 +18,9 @@ const CollectionSpotlight = () => {
             </p>
          </div>
          {/* cards */}
-         {/* <div className='grid grid-cols-3 justify-center gap-7'>
-          
-         </div> */}
-         <SportLightSlider></SportLightSlider>
+         <div className='mt-12'>
+            <SportLightSlider></SportLightSlider>
+         </div>
       </section>
    );
 };

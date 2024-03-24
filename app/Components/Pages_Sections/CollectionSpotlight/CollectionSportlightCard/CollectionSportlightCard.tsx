@@ -8,12 +8,12 @@ const CollectionSportlightCard = ({cardData}) => {
    console.log(cardData)
 
    return (
-      <div className='bg-[#fff] border py-2 shadow-lg'>
+      <div className='bg-[#fff] border py-2 shadow-lg h-[630px]'>
          <div className=' '>
             <Image
                alt=''
-               className='w-full'
-               src={'https://i.ibb.co/vvqXxRL/Ticket-Mockup-3-1.png'}
+               className='w-full h-[430px]'
+               src={image}
                width={218}
                height={0}></Image>
          </div>
@@ -24,11 +24,11 @@ const CollectionSportlightCard = ({cardData}) => {
          </div>
          <div className='text-center'>
             <h5 className='my-2 text-lg text-black font-medium'>
-               Las Vegas Aviators
+               {title}
             </h5>
-            <div className='text-sm'>Oct 15 | Sun | 4:30 PM</div>
-            <p className=' text-sm text-[#525965] mt-2'>
-               Las Vegas Ballpark, Las Vegas, Nevada
+            <div className='text-sm'>{date}</div>
+            <p className=' text-sm text-[#525965] mt-2 flex flex-wrap'>
+            {location}
             </p>
             <button className='px-12 text-white text-xs py-3 bg-black my-3'>
                Take Flight Collection
