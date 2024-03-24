@@ -3,8 +3,8 @@ import CollectionSpotlight from './Components/Pages_Sections/CollectionSpotlight
 
 export default function Home() {
    return (
-      <main className=' bg-[#F7F7F8] dark:bg-[#292B32] h-full'>
-         <div className='lg:w-[1249px] mx-auto '>
+      <main className=' bg-[#F7F7F8] dark:bg-[#292B32] '>
+         <div className='lg:w-[1249px] mx-auto'>
             <Sports></Sports>
             <CollectionSpotlight></CollectionSpotlight>
          </div>
