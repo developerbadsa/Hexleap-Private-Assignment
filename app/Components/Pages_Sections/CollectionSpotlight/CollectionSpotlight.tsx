@@ -1,14 +1,16 @@
 import React from 'react';
 import SectionHeading from '../../Shared/SectionHeading/SectionHeading';
 import CollectionSportlightCard from './CollectionSportlightCard/CollectionSportlightCard';
+import SportLightSlider from './SportLightSlider/SportLightSlider';
+// import SportLightSlider from './SportLightSlider/SportLightSlider'
 
-const sportlightCardData = [1, 2, 3];
+
 
 const CollectionSpotlight = () => {
    return (
-      <section className='mt-8 py-12 px-28'>
+      <section className='mt-8 py-12  flex flex-col justify-between'>
          {/* Heading */}
-         <div className='text-center '>
+         <div className='text-center px-28'>
             <SectionHeading
                headingText={'Collection Spotlight'}></SectionHeading>
             <p className='text-sm py-4 leading-5 px-10'>
@@ -18,13 +20,10 @@ const CollectionSpotlight = () => {
             </p>
          </div>
          {/* cards */}
-         <div className='grid grid-cols-3 justify-center gap-7'>
-            {sportlightCardData.map((inx, cardData) => (
-               <CollectionSportlightCard
-                  key={inx}
-                  cardData={cardData}></CollectionSportlightCard>
-            ))}
-         </div>
+         {/* <div className='grid grid-cols-3 justify-center gap-7'>
+          
+         </div> */}
+         <SportLightSlider></SportLightSlider>
       </section>
    );
 };
