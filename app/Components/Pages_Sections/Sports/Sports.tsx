@@ -6,12 +6,17 @@ import SectionBtn from '../../Shared/Buttons/SectionBtn';
 import DarkModeButton from '../../Shared/DarkMode/DarkModeToogle';
 
 const Sports = () => {
-   const sportCardDatas = [1, 2, 3, 4];
+   const sportCardDatas = [
+      {
+         title: 'Sacramento River Cats',
+         image: 'https://i.ibb.co/MRRx7tW/277307281-10158751675643224-148609460173032344-n.png'
+      }
+   ];
 
    return (
       <section className='px-2 mt-6 '>
          {/* Heading of Sport Section */}
-         <div className='flex justify-between'>
+         <div className='flex justify-between pb-4 pt-6'>
             <h3 className='border-b-2 inline mb-7 border-b-sky-600 py-1 font-bold text-2xl dark:text-white'>
                Sports
             </h3>

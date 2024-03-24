@@ -71,4 +71,16 @@ body {
   .swiper-button-prev, .swiper-button-next{
    /* display: none; */
   }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 9px;
+    font-weight: 700;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    border: 1px solid rgba(38, 205, 235, 0.926);
+    border-radius: 5px;
+    padding: 4px 3px;
+    overflow: visible;
+  }
+  
 }
