@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 
-const CollectionSportlightCard = () => {
+const CollectionSportlightCard = ({cardData}) => {
+
+   const {title, date, location, image} = cardData;
+
+   console.log(cardData)
+
    return (
       <div className='bg-[#fff] border py-2 shadow-lg'>
          <div className=' '>
