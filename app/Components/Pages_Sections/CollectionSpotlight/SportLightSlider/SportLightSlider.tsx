@@ -46,7 +46,17 @@ const sportLightCardData = [
 
   return (
     <>
-      <Swiper slidesPerView={3} navigation={true} modules={[Navigation]} className="mySwiper mx-32">
+      <Swiper breakpoints={{
+        640: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }} navigation={true} modules={[Navigation]}  className="mySwiper">
         {
           sportLightCardData.map((cardData,inx)=> <SwiperSlide key={inx}><CollectionSportlightCard cardData={cardData}></CollectionSportlightCard></SwiperSlide>)
         }
