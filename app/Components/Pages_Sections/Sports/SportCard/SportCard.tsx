@@ -1,10 +1,18 @@
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
 
-const SportCard = ({cardData}) => {
-   const {title, image, totalEvent, sport} = cardData;
+interface CardData {
+   title: string;
+   image: string;
+   totalEvent: string | number; 
+   sport: string;
+}
+
+const SportCard: React.FC<{ cardData: CardData }> = ({ cardData }) => {
+   const { title, image, totalEvent, sport } = cardData;
+
    return (
-      <div className='bg-white dark:bg-[#3B3E47] p-2 shadow-lg  dark:text-white'>
+      <div className='bg-white dark:bg-[#3B3E47] p-2 shadow-lg dark:text-white'>
          <Image
             alt=''
             className='w-full'

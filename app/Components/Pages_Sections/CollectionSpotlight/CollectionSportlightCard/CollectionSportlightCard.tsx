@@ -1,18 +1,27 @@
 import Image from 'next/image';
 import React from 'react';
 
-const CollectionSportlightCard = ({cardData}) => {
-   const {title, date, location, image} = cardData;
+interface CardData {
+   title: string;
+   date: string;
+   location: string;
+   image: string;
+}
+
+const CollectionSportlightCard: React.FC<{ cardData: CardData }> = ({ cardData }) => {
+   const { title, date, location, image } = cardData;
 
    return (
       <div className='bg-[#fff] dark:bg-[#3B3E47] border py-2 shadow-lg h-[430px] md:h-[630px] relative'>
          <div className=' '>
-            <Image
+         <Image
                alt=''
                className='w-full h-[230px] md:h-[430px]'
                src={image}
                width={218}
-               height={0}></Image>
+               height={0}
+               priority
+               ></Image>
          </div>
          {/* Divider */}
          <div className='p1 border-b-[3px] border-b-gray-300 border-dashed relative mb-5'>
